@@ -1,0 +1,5 @@
+<app-attendant
+  *ngFor="let attendant of attendants"
+  [attendant]="attendant"
+  (onSelect)="onSelect($event)"
+></app-attendant>

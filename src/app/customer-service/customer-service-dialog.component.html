@@ -1,0 +1,23 @@
+<header mat-dialog-title class="customer-service-dialog__header">
+  <h2>Choose an Attendant</h2>
+  <button mat-icon-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</header>
+
+<mat-dialog-content class="customer-service-dialog__content">
+  <!-- <app-message message="Hello there!" [messageType]="type.ANSWER"
+    >This is an answer</app-message
+  >
+
+  <app-message
+    message="This is a secondary message."
+    [messageType]="type.QUESTION"
+    >This is a question</app-message
+  > -->
+  <app-attendant-list [attendants]="attendants$ | async"></app-attendant-list>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button color="primary" mat-raised-button mat-dialog-close>OK</button>
+</mat-dialog-actions>

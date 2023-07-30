@@ -1,10 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/theming";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //   font-size: 16px * 0.63;
 }
 
 html,
@@ -14,4 +13,10 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// Custom styles for the dialog header
+.mdc-dialog__title {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Material Design shadow */
+  min-height: 4rem;
 }

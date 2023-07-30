@@ -1,0 +1,10 @@
+<section class="message__container">
+  <div
+    class="message__content"
+    [ngClass]="messageType === type.ANSWER ? 'secondary' : 'primary'"
+  >
+    <p [ngClass]="messageType === type.ANSWER ? 'right' : 'left'">
+      {{ message }}
+    </p>
+  </div>
+</section>

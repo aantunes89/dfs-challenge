@@ -1,0 +1,57 @@
+{
+  "attendants": [
+    {
+      "id": "d03e775e-54f7-4443-9109-a8a2985c3688",
+      "name": "John Doe",
+      "available": true
+    },
+    {
+      "id": "e54a253a-0cb3-4fb2-bab3-e427a5dba6bf",
+      "name": "Jane Doe",
+      "available": true
+    },
+    {
+      "id": "fc18c27b-4918-4782-b15f-7a740ae53071",
+      "name": "Mark Smith",
+      "available": true
+    }
+  ],
+  "topics": [
+    {
+      "id": "270dbaef-fec6-4307-8980-ffdad6514660",
+      "name": "footbal",
+      "data": [
+        {
+          "id": "ba9832ea-d58c-4295-9297-219352ac015e",
+          "league": "Premier League",
+          "teams": ["Liverpool", "Man. UTD", "Man. City"]
+        },
+        {
+          "id": "6a2de220-5dca-4129-9d73-091660d5e67d",
+          "league": "Bundesliga",
+          "teams": ["Bayern MUN", "Borussia Dortmund", "FC Schalke 04"]
+        }
+      ]
+    },
+    {
+      "id": "cfbc8a30-3a68-4e4a-98cd-6b82d9803f22",
+
+      "name": "books",
+      "data": [
+        {
+          "id": "e2bc9879-bfd2-449e-896f-7c3f2295fb4c",
+          "genre": "Investment",
+          "titles": [
+            "Rich dad Poor dad - Robert Kyosaki",
+            "The inteligent investor - Benjamin Graham"
+          ]
+        },
+        {
+          "id": "6d7393d2-6839-4393-956e-1c59b2f65b79",
+          "genre": "Children",
+          "titles": ["Momo - Michael Ende", "BFG -Roald Dahl"]
+        }
+      ]
+    }
+  ]
+}

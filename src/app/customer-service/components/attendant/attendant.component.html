@@ -1,0 +1,9 @@
+<mat-card
+  class="attendant-card__container"
+  appearance="raised"
+  (click)="onSelect.emit(attendant)"
+>
+  <mat-card-title class="attendant-card__header">{{
+    attendant.name
+  }}</mat-card-title>
+</mat-card>
