@@ -1,5 +1,11 @@
+import { MessageEnum } from '../utils';
+
 export interface Topic {
-  id: string;
-  name: string;
-  data: any; // refactor
+  url: string;
+  type?: MessageEnum;
+  data: {
+    name: string;
+    type: MessageEnum;
+    data: string[];
+  };
 }

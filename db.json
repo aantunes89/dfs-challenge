@@ -19,37 +19,46 @@
   "topics": [
     {
       "id": "270dbaef-fec6-4307-8980-ffdad6514660",
-      "name": "footbal",
+      "name": "football",
+      "type": "QUESTION",
       "data": [
         {
+          "topicId": "270dbaef-fec6-4307-8980-ffdad6514660",
           "id": "ba9832ea-d58c-4295-9297-219352ac015e",
-          "league": "Premier League",
-          "teams": ["Liverpool", "Man. UTD", "Man. City"]
+          "name": "Premier League",
+          "data": ["Liverpool", "Man. UTD", "Man. City"],
+          "type": "QUESTION"
         },
         {
+          "topicId": "270dbaef-fec6-4307-8980-ffdad6514660",
           "id": "6a2de220-5dca-4129-9d73-091660d5e67d",
-          "league": "Bundesliga",
-          "teams": ["Bayern MUN", "Borussia Dortmund", "FC Schalke 04"]
+          "name": "Bundesliga",
+          "data": ["Bayern MUN", "Borussia Dortmund", "FC Schalke 04"],
+          "type": "QUESTION"
         }
       ]
     },
     {
       "id": "cfbc8a30-3a68-4e4a-98cd-6b82d9803f22",
-
       "name": "books",
+      "type": "QUESTION",
       "data": [
         {
+          "topicId": "cfbc8a30-3a68-4e4a-98cd-6b82d9803f22",
           "id": "e2bc9879-bfd2-449e-896f-7c3f2295fb4c",
-          "genre": "Investment",
-          "titles": [
+          "name": "Investment",
+          "data": [
             "Rich dad Poor dad - Robert Kyosaki",
             "The inteligent investor - Benjamin Graham"
-          ]
+          ],
+          "type": "QUESTION"
         },
         {
+          "topicId": "cfbc8a30-3a68-4e4a-98cd-6b82d9803f22",
           "id": "6d7393d2-6839-4393-956e-1c59b2f65b79",
-          "genre": "Children",
-          "titles": ["Momo - Michael Ende", "BFG -Roald Dahl"]
+          "name": "Children",
+          "data": ["Momo - Michael Ende", "BFG -Roald Dahl"],
+          "type": "QUESTION"
         }
       ]
     }

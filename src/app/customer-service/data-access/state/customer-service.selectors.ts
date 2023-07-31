@@ -8,3 +8,15 @@ export const getAttendants = createSelector(
   customerServiceFeatureSelector,
   ({ attendants }) => attendants
 );
+
+export const getSelectedAttendant = createSelector(
+  customerServiceFeatureSelector,
+  ({ selectedAttendant }) => selectedAttendant
+);
+
+export const getTopics = createSelector(customerServiceFeatureSelector, ({ topics }) => topics);
+
+export const getMessages = createSelector(
+  customerServiceFeatureSelector,
+  ({ messages }) => messages
+);

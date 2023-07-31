@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnDestroy } from '@angular/core';
 import { Attendant } from '../../domain';
+import { Store } from '@ngrx/store';
+import { CustomerServiceActions } from '../../data-access/state';
 
 @Component({
   selector: 'app-attendant-list',
@@ -9,9 +11,9 @@ import { Attendant } from '../../domain';
 export class AttendantListComponent {
   @Input() attendants!: Attendant[] | null;
 
-  public onSelect(attendant: Attendant): void {
-    console.log(attendant);
+  constructor(private readonly store: Store) {}
 
-    return;
+  public onSelect(selectedAttendant: Attendant): void {
+    return this.store.dispatch(CustomerServiceActions.selectAttendant({ selectedAttendant }));
   }
 }

@@ -1,21 +1,22 @@
 <header mat-dialog-title class="customer-service-dialog__header">
-  <h2>Choose an Attendant</h2>
+  <h2 *ngIf="selectedAttendant$ | async as selectedStudant; else defaultTitle">
+    {{ selectedStudant.name }}
+  </h2>
+  <ng-template #defaultTitle>
+    <h2>Select an Attendant</h2>
+  </ng-template>
   <button mat-icon-button mat-dialog-close>
     <mat-icon>close</mat-icon>
   </button>
 </header>
 
 <mat-dialog-content class="customer-service-dialog__content">
-  <!-- <app-message message="Hello there!" [messageType]="type.ANSWER"
-    >This is an answer</app-message
-  >
+  <app-attendant-list
+    *ngIf="!(selectedAttendant$ | async)"
+    [attendants]="attendants$ | async"
+  ></app-attendant-list>
 
-  <app-message
-    message="This is a secondary message."
-    [messageType]="type.QUESTION"
-    >This is a question</app-message
-  > -->
-  <app-attendant-list [attendants]="attendants$ | async"></app-attendant-list>
+  <app-message-list [messages]="messages$ | async"></app-message-list>
 </mat-dialog-content>
 
 <mat-dialog-actions align="end">

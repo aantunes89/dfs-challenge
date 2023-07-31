@@ -31,7 +31,6 @@ export class AppComponent {
     // You can subscribe to the 'afterClosed' event to perform actions after the dialog is closed
     dialogRef.afterClosed().subscribe((result) => {
       // Do something with the result if needed
-      console.log('Dialog closed with result:', result);
     });
   }
 }

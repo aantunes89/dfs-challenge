@@ -1,0 +1,83 @@
+{
+  "topics": {
+    "books": {
+      "type": "QUESTION",
+      "url": "books",
+      "data": [
+        {
+          "type": "QUESTION",
+          "url": "investment",
+          "name": "Investment",
+          "data": [
+            { "name": "Rich dad Poor dad - Robert Kyosaki", "type": "QUESTION" },
+            { "name": "The inteligent investor - Benjamin Graham", "type": "QUESTION" }
+          ]
+        },
+        {
+          "type": "QUESTION",
+          "url": "children",
+          "name": "Children",
+          "data": [
+            { "name": "Momo - Michael Ende", "type": "QUESTION" },
+            { "name": "BFG -Roald Dahl", "type": "QUESTION" }
+          ]
+        }
+      ]
+    },
+    "football": {
+      "type": "QUESTION",
+      "url": "football",
+      "data": [
+        {
+          "type": "QUESTION",
+          "url": "premierleague",
+          "name": "Premier League",
+          "data": [
+            {
+              "name": "Liverpool",
+              "type": "QUESTION"
+            },
+            {
+              "name": "Man. UTD",
+              "type": "QUESTION"
+            },
+            {
+              "name": "Man. City",
+              "type": "QUESTION"
+            }
+          ]
+        },
+        {
+          "type": "QUESTION",
+          "url": "bundesliga",
+          "name": "Bundesliga",
+          "data": [
+            {
+              "name": "Bayern Munich"
+            },
+            {
+              "name": "Borussia Dortmund"
+            },
+            {
+              "name": "RB Leipzig"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attendants": [
+    {
+      "name": "John Doe",
+      "available": true
+    },
+    {
+      "name": "Jane Doe",
+      "available": true
+    },
+    {
+      "name": "Mark Smith",
+      "available": true
+    }
+  ]
+}

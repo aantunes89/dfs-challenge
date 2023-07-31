@@ -13,6 +13,8 @@ import {
   CustomerServiceEffects,
   reducer as customerServiceReducer,
 } from './data-access/state/index';
+import { MessageListComponent } from './feature/message-list/message-list.component';
+import { DataAccessService } from './data-access/services/data-access.service';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import {
     MessageComponent,
     AttendantListComponent,
     AttendantComponent,
+    MessageListComponent,
   ],
   imports: [
     CommonModule,
@@ -28,6 +31,6 @@ import {
     EffectsModule.forFeature([CustomerServiceEffects]),
   ],
   exports: [CustomerServiceDialogComponent],
-  providers: [],
+  providers: [DataAccessService],
 })
 export class CustomerServiceDialogModule {}

@@ -1,10 +1,7 @@
-<section class="message__container">
-  <div
-    class="message__content"
-    [ngClass]="messageType === type.ANSWER ? 'secondary' : 'primary'"
-  >
-    <p [ngClass]="messageType === type.ANSWER ? 'right' : 'left'">
-      {{ message }}
+<section class="message__container" (click)="onSelectMessage(message)">
+  <div class="message__content" [ngClass]="messageType === type.QUESTION ? 'secondary' : 'primary'">
+    <p [ngClass]="messageType === type.QUESTION ? 'left' : 'right'">
+      {{ message.content }}
     </p>
   </div>
 </section>

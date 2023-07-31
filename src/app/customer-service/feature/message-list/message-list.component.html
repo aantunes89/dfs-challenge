@@ -1,0 +1,7 @@
+<app-message
+  *ngFor="let message of messages"
+  [message]="message"
+  [messageType]="message.type"
+  (onSelect)="onSelect($event)"
+>
+</app-message>
